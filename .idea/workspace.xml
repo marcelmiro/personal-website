@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="60c2d396-07c7-4f19-a2da-839edd51057e" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="1SZ00Lrhfs2dJpTL5O4u8wMZiaL" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="60c2d396-07c7-4f19-a2da-839edd51057e" name="Default Changelist" comment="" />
+      <created>1571755586458</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1571755586458</updated>
+      <workItem from="1571755587618" duration="77138000" />
+      <workItem from="1572563059476" duration="4495000" />
+      <workItem from="1572988287011" duration="17000" />
+      <workItem from="1574199043612" duration="4061000" />
+      <workItem from="1575799155203" duration="497000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="-1368" y="178" key="#Deployment" timestamp="1572052261786">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1368" y="178" key="#Deployment/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1572052261786" />
+    <state x="-1192" y="350" key="#com.intellij.tools.ToolEditorDialog" timestamp="1574202936042">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1192" y="350" key="#com.intellij.tools.ToolEditorDialog/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1574202936042" />
+    <state x="-1326" y="298" width="731" height="631" key="EditFileWatcherDialog" timestamp="1574202659188">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1326" y="298" width="731" height="631" key="EditFileWatcherDialog/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1574202659188" />
+    <state x="-1180" y="274" key="FileChooserDialogImpl" timestamp="1572054736155">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1180" y="274" key="FileChooserDialogImpl/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1572054736155" />
+    <state x="-1459" y="162" key="SettingsEditor" timestamp="1574202961741">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1459" y="162" key="SettingsEditor/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1574202961741" />
+    <state x="-1098" y="418" key="WebDeployment.AddServerDialog.v.1" timestamp="1572052186596">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1098" y="418" key="WebDeployment.AddServerDialog.v.1/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1572052186596" />
+    <state x="-1090" y="413" key="publish.login" timestamp="1572563073578">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1090" y="413" key="publish.login/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1572563073578" />
+  </component>
+</project>

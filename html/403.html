@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>403</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500" rel="stylesheet">
+
+    <style>
+        .is-hidden {
+            visibility: hidden !important;
+        }
+        body {
+            background-color: black;
+        }
+        .containerContainer {
+            min-height: 100%;
+            min-height: 100vh;
+
+            display: flex;
+            align-items: center;
+        }
+        .container {
+            width: 100%;
+            text-align: center;
+            font-family: Raleway, Arial, serif;
+            color: white;
+        }
+        h1 {
+            font-size: 50px;
+        }
+        h2 {
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 17px;
+            font-weight: 300;
+        }
+        a {
+            color: white;
+        }
+        @media screen and (max-width: 450px) {
+            #type {
+                margin: 0;
+                padding-right: 15px;
+            }
+            h1 {
+                font-size: 30px;
+            }
+            h2 {
+                font-size: 12px;
+            }
+            h3 {
+                font-size: 8px;
+            }
+        }
+        @media screen and (max-width: 290px) {
+            #type {
+                padding-left: 0;
+                padding-right: 0;
+                margin: 0 15px 0 0;
+            }
+            h1 {
+                font-size: 12px;
+            }
+            h2 {
+                font-size: 6px;
+            }
+            h3 {
+                font-size: 4px;
+            }
+        }
+    </style>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/6.0.2/typeit.min.js"></script>
+
+</head>
+<body>
+
+<div class="containerContainer">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1 id="type" style="margin-left: 33px"></h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h2 id="message">&nbsp;</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h3 id="link">&nbsp;</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    window.addEventListener("load", function() {
+
+        /*------ TYPE ------*/
+        new TypeIt('#type', {
+            speed: 700,
+            deleteSpeed: 300,
+            waitUntilVisible: true,
+            lifeLike: true,
+            breakLines: false,
+            cursorChar: '▋',
+            afterComplete: () => {
+                $("#type").find('.ti-cursor').addClass('is-hidden');
+
+                /*------ MESSAGE ------*/
+                new TypeIt('#message', {
+                    speed: 75,
+                    waitUntilVisible: true,
+                    lifeLike: true,
+                    breakLines: false,
+                    cursorChar: '▋',
+                    afterComplete: () => {
+                        $("#message").find('.ti-cursor').addClass('is-hidden');
+
+                        /*------ LINK ------*/
+                        new TypeIt('#link', {
+                            speed: 75,
+                            waitUntilVisible: true,
+                            lifeLike: true,
+                            breakLines: false,
+                            cursorChar: '▋',
+                            afterComplete: () => {
+                                $("#link").find('.ti-cursor').addClass('is-none');
+                            },
+                        })
+                            .delete()
+                            .pause(1500)
+                            .type("Click <a href='https://marcelmiro.com'>here</a> to try again.")
+                            .pause(1000)
+                            .options({cursor: false})
+                            .go();
+                    },
+                })
+                    .delete()
+                    .pause(1500)
+                    .type("Access forbidden for the specified file.")
+                    .pause(1000)
+                    .options({cursor: false})
+                    .go();
+            },
+        })
+            .pause(1500)
+            .type(":(")
+            .pause(2000)
+            .delete()
+            .options({speed: 400,})
+            .type("ERROR 403")
+            .pause(1500)
+            .options({cursor: false})
+            .go();
+    });
+</script>
+</body>
+</html>
