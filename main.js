@@ -4,7 +4,7 @@ let lazyLoadInstance = new LazyLoad({
 });
 
 $(window).on('beforeunload', function () {
-    $(window).scrollTop(0);
+    //$(window).scrollTop(0);
 });
 
 window.addEventListener("load", function () {
@@ -12,10 +12,18 @@ window.addEventListener("load", function () {
     starsPos();
     //planetsPos();
     //roverPos();
+    projectWebsiteHeight();
 });
 
 window.addEventListener("resize", function () {
     starsPos();
+    projectWebsiteHeight();
+
+    pomodoroResize();
+});
+
+window.addEventListener("scroll", function() {
+    pomodoroScroll();
 });
 
 function checkBrowser() {
@@ -78,6 +86,26 @@ function smoothScroll() {
     });
 }
 
+let major36BH, major36MH;
+function projectWebsiteHeight(input) {
+    major36BH = $("#projects > .content > #major36.projectWebsite > .browser .website").height();
+    major36MH = $("#projects > .content > #major36.projectWebsite > .mobile .website").height();
+
+    if (input) {
+        let temp = "";
+        switch (input) {
+            case "majorB":
+                temp = major36BH;
+                break;
+            case "majorM":
+                temp = major36MH;
+                break;
+        }
+        console.log(temp);
+        return "-" + temp/4 + "px";
+    }
+}
+
 let stars = $("#introSection > #introBg > #bgTinyStars, #introSection > #introBg > #bgSmallStars");
 let earth = $("#introSection > #introBg > #bgEarth");
 let isStarsPos = false;
@@ -87,8 +115,7 @@ if (browser === "Edge") {
 } else {
     function starsPos() {
         let windowW = $(window).width();
-        let starsWidth = earth.width() * 4.5;
-        let starsTop;
+        let starsWidth, starsTop;
 
         if (windowW <= 500) {
             starsTop = earth.position().top - 25;
@@ -96,12 +123,14 @@ if (browser === "Edge") {
             starsTop = earth.position().top - ((3 * windowW) / 98 + 475 / 49);
         } else if (windowW <= 1500) {
             starsTop = earth.position().top - (windowW / 51 + 350 / 17);
+            starsWidth = earth.width() * 4.5;
         } else if (windowW <= 2000) {
             starsTop = earth.position().top - (windowW / 100 + 35);
         } else if (windowW <= 2500) {
             starsTop = earth.position().top - ((3 * windowW) / 500 + 43);
         } else {
             starsTop = earth.position().top - 58;
+            starsWidth = earth.width() * 6;
         }
 
         stars.css({
@@ -116,6 +145,33 @@ if (browser === "Edge") {
         }
     }
 }
+
+
+let windowH, pomodoroEnter, pomodoroLeave;
+function pomodoroResize() {
+    let browserWebsite = $('#projects > .content > #pomodoro.projectWebsite > .browser .website');
+    windowH = $(window).height();
+    pomodoroEnter = browserWebsite.offset().top - .75 * windowH;
+    pomodoroLeave = pomodoroEnter + browserWebsite.height() + .5 * windowH;
+    pomodoroScroll();
+}
+function pomodoroScroll() {
+    let scrollPos = $(document).scrollTop();
+    if (scrollPos >= pomodoroEnter && scrollPos <= pomodoroLeave) {
+        if ($('#projects > .content > #pomodoro.projectWebsite > .browser img.website').attr("src") !== "assets/work_pomodoro_1080.gif") {
+            $('#projects > .content > #pomodoro.projectWebsite > .browser img.website').attr({ "src": "assets/work_pomodoro_1080.gif" });
+            $('#projects > .content > #pomodoro.projectWebsite > .mobile img.website').attr({ "src": "assets/work_pomodoro_mobile.gif" });
+            //console.log("gif");
+        }
+    } else {
+        if ($('#projects > .content > #pomodoro.projectWebsite > .browser img.website').attr("src") !== "assets/work_pomodoro_1080.jpg") {
+            $('#projects > .content > #pomodoro.projectWebsite > .browser img.website').attr({ "src": "assets/work_pomodoro_1080.jpg" });
+            $('#projects > .content > #pomodoro.projectWebsite > .mobile img.website').attr({ "src": "assets/work_pomodoro_mobile.jpg" });
+            //console.log("jpg");
+        }
+    }
+}
+pomodoroResize();
 
 
 let textSpeed = 50;
@@ -164,14 +220,9 @@ if (browser !== "IE") {
         .from(".spaceSeparator > .bg > .satellite", 1, {x: "8vw", y: "35vh"}, 0);
 
     let tweenProjectRestaurant = new TimelineMax();
-    tweenProjectRestaurant.to("#projects > .content > .projectWebsite.left > .browser .website", 1, {ease: Power1.easeOut, y: "-35vh"}, 0)
-        .to("#projects > .content > .projectWebsite.left > .mobile .website", 1, {ease: Power1.easeOut, y: "-60vh"}, 0);
-
-    /*
-    let tweenProjectVideogame = new TimelineMax();
-    tweenProjectVideogame.to("#projects > .content > .projectWebsite.right > .browser .website", 1, {ease: Power1.easeOut, y: "-35vh"}, 0)
-        .to("#projects > .content > .projectWebsite.right > .mobile .website", 1, {ease: Power1.easeOut, y: "-60vh"}, 0);
-     */
+    // let browserH = document.querySelector("#projects > .content > #major36.projectWebsite > .browser .website").style.height;6
+    tweenProjectRestaurant.to("#projects > .content > #major36.projectWebsite > .browser .website", 1, {ease: "none", y: "-55%"}, 0)
+        .to("#projects > .content > #major36.projectWebsite > .mobile .website", 1, {ease: "none", y: "-55vh"}, 0);
 
     let tweenContact = new TimelineMax();
     tweenContact.to("#contact > .bg > #rocket", 1, {y: "-40vh"}, 0)
@@ -198,21 +249,13 @@ if (browser !== "IE") {
         .addTo(controller);
 
     let sceneProjectRestaurant = new ScrollMagic.Scene({
-        offset: 1,
+        offset: -100,
         triggerElement: "#projects > .content > .text.right",
         duration: "100%",
         reverse: true
     })
         .setTween(tweenProjectRestaurant)
-        //.addIndicators()
         .addTo(controller);
-
-    /*
-    let sceneProjectVideogame = new ScrollMagic.Scene({offset: 1, triggerElement: "#projects > .content > .text.left", duration: "100%", reverse: true})
-        .setTween(tweenProjectVideogame)
-        //.addIndicators()
-        .addTo(controller);
-     */
 
     let sceneContact = new ScrollMagic.Scene({
         offset: -400,

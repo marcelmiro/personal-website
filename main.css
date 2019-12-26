@@ -59,6 +59,7 @@ a, a:hover, a:visited {
     border: none;
     text-decoration: none;
     outline: none;
+    cursor: pointer;
 }
 .underline, a.underline, a.underline:visited {
     text-decoration: none;
@@ -99,7 +100,7 @@ body > #orientation {
     font-size: 20px;
 }
 
-#introSection, #introSection > #introBg > #particles-js, #introSection > #introBg, #introSection > #introBg > #bg, #introSection > #introBg > #bgStars {
+#introSection > #introBg, #introSection > #introBg > #bg, #introSection > #introBg > #bgStars {
     position: relative;
     height: 100vh;
     width: 100%;
@@ -177,7 +178,7 @@ body > #orientation {
     bottom: 0;
     left: 0;
     z-index: 5;
-//transform: rotate(-90deg);
+    //transform: rotate(-90deg);
 }
 #introSection > #introBg > #bgEarth, #introSection > #introBg > #bgTinyStars, #introSection > #introBg > #bgSmallStars {
     position: absolute;
@@ -288,14 +289,11 @@ body > #orientation {
 
 
 .textSection {
-    max-width: 1000px;
     text-align: center;
     margin: 40px auto 0;
 }
 .textSection h1 {
     font-family: "Roboto Slab", "Roboto", "PT Sans", Helvetica, Arial, serif;
-}
-.textSection h1 {
     color: #0a0a0a;
     font-size: 40px;
     font-weight: 700;
@@ -306,13 +304,16 @@ body > #orientation {
     color: #3a3a3a;
     font-size: 20px;
 }
+.textSection h4 { color: #999999; }
 
+.textSection > #webFeatures { min-width: 250px; }
 .textSection > #webFeatures > h1 {
     margin-bottom: 20px;
 }
 .textSection > #webFeatures .col-md-4 {
     margin: 30px 0 10px;
 }
+.textSection > #webFeatures img { max-width: 350px; }
 .textSection > #webFeatures h3 {
     margin: 25px 0 20px;
     font-family: "Roboto Slab", "Roboto", "PT Sans", Helvetica, Arial, serif;
@@ -324,7 +325,7 @@ body > #orientation {
 
 .spaceSeparator {
     position: relative;
-    width: 100vw;
+    width: 100%;
     margin: 7vh 0;
     padding: 5vh 0;
     background: #161E39;
@@ -401,7 +402,6 @@ body > #orientation {
     position: relative;
     margin: 0;
     padding: 0;
-    width: 100vw;
 }
 #about > .textSection {
     padding-top: 150px;
@@ -409,7 +409,9 @@ body > #orientation {
 }
 #about > .textSection > .text {
     position: relative;
-    width: 60%;
+    width: 700px;
+    left: 50%;
+    transform: translateX(-90%);
     background: white;
     -webkit-border-radius: 5px;
     border-radius: 5px;
@@ -433,10 +435,10 @@ body > #orientation {
 }
 #about > .bg  {
     position: absolute;
-    width: 40%;
-    height: 100%;
+    width: 900px;
     bottom: -7vh;
-    left: calc(50% + 100px);
+    left: 50%;
+    transform: translateX(-10%);
 }
 #about > .bg > .astronaut {
     position: absolute;
@@ -444,7 +446,6 @@ body > #orientation {
 }
 #about > .bg > .astronaut#flag {
     bottom: 0;
-    right: -50px;
     width: 900px;
 }
 #about > .bg > .astronaut#waving {
@@ -480,7 +481,8 @@ body > #orientation {
 
 
 #projects {
-    margin: 150px auto 625px;
+    margin: 100px auto 0;
+    overflow: hidden;
 }
 #projects > .textSection h1 {
     font-size: 45px;
@@ -488,7 +490,8 @@ body > #orientation {
     text-align: center;
 }
 #projects > .content, #projects > .content > .projectWebsite, #projects > .content > .projectWebsite img { position: relative; }
-#projects > .content.content-separator { top: 600px; }
+#projects > .content { margin-bottom: 625px; }
+#projects > .content.content-separator { height: 250px; }
 #projects > .content > .projectWebsite {
     width: 1000px;
     position: absolute;
@@ -496,6 +499,7 @@ body > #orientation {
 }
 #projects > .content > .projectWebsite.left { right: 50%; }
 #projects > .content > .projectWebsite.right { left: 50%; }
+#projects img { overflow: hidden; }
 #projects > .content > .projectWebsite > .browser {
     width: 100%;
     position: relative;
@@ -541,7 +545,7 @@ body > #orientation {
     width: 600px;
 }
 #projects > .content > .text.right { left: calc(50% + 150px); }
-#projects > .content > .text.left { position: absolute !important; left: 50%; transform: translate(-110%, 0); }
+#projects > .content > .text.left { position: absolute !important; left: 50%; transform: translate(-110%, 0); text-align: right; padding-right: 40px; }
 #projects > .content > .text > * { line-height: 2; }
 #projects > .content .glowing-line {
     width: 55px;
@@ -551,6 +555,7 @@ body > #orientation {
     -webkit-box-shadow: 0 2px 8px 3px rgba(252, 102, 0, 0.25);
     box-shadow: 0 2px 8px 3px rgba(252, 102, 0, 0.25);
 }
+#projects > .content > .text.left .glowing-line { margin-left: 100%; transform: translateX(-100%); }
 #projects > .content > .text h3, #projects > .content > .text h4 {
     font-family: "Roboto", "PT Sans", Helvetica, Arial, serif;
     color: black;
@@ -571,6 +576,7 @@ body > #orientation {
     display: none;
     visibility: hidden;
 }
+#projects #pomodoro .mobile .website { border-radius: 30px; }
 
 #contact {
     background: #161E39;
@@ -639,6 +645,7 @@ body > #orientation {
     left: 0;
     bottom: 0;
     z-index: 2;
+    overflow: hidden;
 }
 #contact > .bg > #rocket {
     width: 180px;
@@ -689,8 +696,11 @@ body > #orientation {
     #introSection > #introBg > .planet.blue { width: 425px; bottom: -14%; }
     #introSection > #introBg > .planet.earth { width: 289px; bottom: 20vh; right: 12%; }
     #introSection > #introBg > .planet.red { width: 680px; right: -175px; top: -200px; }
-    #projects { margin-bottom: 575px; }
-    #projects > .content.content-separator { top: 550px; }
+    #about > .textSection { padding-top: 125px; }
+    #about > .textSection > .text { width: 600px; }
+    #about h1 { font-size: 50px; top: -30px; }
+    #about p { font-size: 17px; }
+    #projects { margin-top: 50px; }
     #projects > .content > .projectWebsite.left { right: 600px; }
     #projects > .content > .projectWebsite.right { left: 600px; }
     #projects > .content > .text { width: 450px; }
@@ -712,13 +722,13 @@ body > #orientation {
     #introSection > #introBg > .planet.earth { bottom: 18vh; right: 10%; }
     #needWeb > .bg > .satellite { width: 250px; right: 120px; }
     #quote { margin: 65px auto; }
-    #about > .bg > .astronaut#flag { width: 700px; }
+    #about > .bg > .astronaut#flag { width: 700px; transform: translateX(5%); }
 }
 @media screen and (max-width: 1300px) {
     #introSection > #introBg > .planet.blue { width: 383px; bottom: -10%; }
     #introSection > #introBg > .planet.earth { bottom: 18vh; right: 12%; }
     #introSection > #introBg > .planet.red { width: 595px; top: -150px; right: -150px; }
-    #about > .bg > .astronaut#flag { right: -100px; }
+    #about > .textSection > .text { width: 550px; }
     #contact > .bg > #smoke { width: 600px; }
     #contact > .bg > #rocket { width: 150px; bottom: -220px; }
 }
@@ -726,15 +736,12 @@ body > #orientation {
     #introSection > #introBg > .planet.yellow { width: 250px; top: 10%; left: 50px; }
     #introSection > #introBg > .planet.earth { width: 255px; bottom: 20vh; right: 8%; }
     #introSection > #introBg > .planet.red { width: 510px; top: -100px; right: -135px; }
-    .textSection > #webFeatures { margin: 0 auto; width: 80%; }
     #needWeb > .bg > .planet.beige { width: 300px; }
     #needWeb > .bg > .planet.pink { width: 200px; }
     #needWeb > .bg > .satellite { width: 225px; right: 100px; }
     #needWeb > .text { width: 50%; }
     #about > .textSection { padding-top: 100px; }
-    #about h1 { font-size: 50px; top: -30px; }
-    #about p { font-size: 17px; }
-    #about > .bg > .astronaut#flag { width: 600px; right: -50px; }
+    #about > .bg > .astronaut#flag { width: 600px; }
 }
 @media screen and (max-width: 1150px) {
     #needWeb > .bg > .satellite { width: 175px; right: 50px; }
@@ -742,13 +749,21 @@ body > #orientation {
 }
 @media screen and (max-width: 1100px) {
     #introSection > #introBg > .planet.earth { right: 5%; bottom: 22vh; }
-    #quote { width: 700px; }
+    #quote { width: 800px; }
     #quote { margin: 55px auto; }
     #quote h1 { font-size: 33px; }
     #quote h2 { font-size: 28px; }
+    #about > .textSection .text { transform: translateX(-70%); }
+    #about > .bg { transform: translateX(-50%); }
     #about > .bg > .astronaut#flag { visibility: hidden; display: none; }
-    #about > .bg > .astronaut#waving { visibility: visible; display: inline; }
-    #about { max-width: 800px; left: 50%; transform: translate(-50%, 0); }
+    #about > .bg > .astronaut#waving {
+        visibility: visible; display: inline;
+        top: auto; left: auto; right: 0; bottom: -6px;
+        transform: translate(0, 0);
+    }
+}
+@media screen and (max-width: 991px) {
+    #quote h2 { margin: -20px -40px 0 0; }
 }
 @media screen and (max-width: 990px) {
     #introSection > #title { transform: translate(-50%, 35%); }
@@ -761,9 +776,10 @@ body > #orientation {
     #about > .textSection { padding-top: 50px; }
     #about h1 { font-size: 40px; left: -20px; top: -20px; }
     #about p { font-size: 15px; }
+    #about > .bg { transform: translateX(-55%); }
     #about > .bg > .astronaut#waving { width: 250px; }
-    #projects { margin-bottom: 750px; }
-    #projects > .content.content-separator { top: 650px; }
+    #projects > .content { margin-bottom: 700px; }
+    #projects > .content.content-separator { margin-bottom: 450px; }
     #projects > .content > .projectWebsite { width: 750px; }
     #projects > .content > .projectWebsite.left { right: 500px; }
     #projects > .content > .projectWebsite.right { left: 500px; }
@@ -772,6 +788,7 @@ body > #orientation {
     #projects > .content > .text { width: 400px; position: absolute; }
     #projects > .content > .text.right { left: auto; right: 25px; }
     #projects > .content > .text.left { right: auto; left: 25px; width: 380px; }
+    #projects #pomodoro .mobile .website { top: 0; }
     #contact > .bg > #smoke { left: auto; right: 375px; }
     #contact > .bg > #rocket { left: 75px; }
 }
@@ -781,7 +798,9 @@ body > #orientation {
     #introSection > #introBg > .planet.red { width: 500px; top: -150px; }
     #needWeb > .bg > .planet.beige { width: 225px; }
     #needWeb > .bg > .planet.pink { width: 150px; }
-    #about { max-width: 700px; }
+    #about > .textSection > .text { transform: translateX(-62%); }
+    #about > .bg { transform: translateX(-58%); }
+    #about > .bg > .astronaut#waving { width: 220px; }
     .spaceSeparator#codeP { padding: 5vh 0; }
     .spaceSeparator#codeP > .text { width: 600px; }
     .spaceSeparator#codeP h1 { font-size: 35px; }
@@ -794,6 +813,7 @@ body > #orientation {
     #needWeb h2 { font-size: 10px; }
     #needWeb h3 { font-size: 12px; }
     #needWeb button { font-size: 10px; padding: 7px 15px; }
+    #projects > .content:not(.content-separator) { margin-bottom: 625px; }
 }
 @media screen and (max-width: 800px) {
     #introSection > #introBg > .planet.blue { left: 70px; }
@@ -803,14 +823,18 @@ body > #orientation {
     #quote { margin: 45px auto; width: 500px; }
     #quote h1 { font-size: 22px; }
     #quote h2 { font-size: 20px; margin-top: -25px; }
-    #about { max-width: 600px; }
-    #about > .textSection > .text { width: 90%; left: 50%; transform: translate(-50%, 0); }
+    #about > .textSection > .text { width: 80%; left: 50%; transform: translate(-50%, 0); }
+    #about h1 { font-size: 50px; }
+    #about p { font-size: 17px; }
     #about > .bg > .astronaut#waving { visibility: hidden; display: none; }
-    #about > .bg { width: calc(40% - 20px); left: calc(55% + 20px); bottom: 0; top: -40px; height: 135px; }
-    #about > .bg > .astronaut#waving-half { visibility: visible; display: inline; bottom: 0; left: 0; }
-    #projects { margin: 80px auto 735px; }
+    #about > .bg { bottom: auto; top: 95px; transform: translateX(-70%); }
+    #about > .bg > .astronaut#waving-half {
+        visibility: visible; display: inline;
+        top: auto; left: auto; bottom: 0; right: 0;
+        transform: translate(0, 0);
+    }
+    #projects { margin: 80px auto 0; }
     #projects > .textSection h1 { font-size: 38px; }
-    #projects > .content.content-separator { top: 600px; }
     #projects > .content > .text { top: 100px; }
     #projects > .content > .text > * { line-height: 1.8; }
     #projects > .content > .text h3 { font-size: 26px; }
@@ -819,8 +843,7 @@ body > #orientation {
     #contact > .bg > #rocket { left: 40px; }
 }
 @media screen and (max-width: 740px) {
-    #projects { margin-bottom: 660px; }
-    #projects > .content.content-separator { top: 575px; }
+    #projects > .content.content-separator { margin-bottom: 340px; }
     #projects > .content > .projectWebsite { width: 650px; }
     #projects > .content > .projectWebsite.left { right: 400px; }
     #projects > .content > .projectWebsite.right { left: 400px; }
@@ -838,6 +861,7 @@ body > #orientation {
 @media screen and (max-width: 700px) {
     #introSection > #introBg > .planet.yellow { width: 180px; top: 14%; left: auto; right: 450px; }
     #introSection > #introBg > .planet.blue { width: 280px; bottom: -6%; left: 30px; }
+    .textSection > #webFeatures h1 { font-size: 32px; }
     .spaceSeparator#codeP { padding: 4vh 0; }
     .spaceSeparator#codeP > .text { width: 480px; }
     .spaceSeparator#codeP h1 { font-size: 28px; }
@@ -867,30 +891,31 @@ body > #orientation {
     #needWeb button { font-size: 12px; }
     #needWeb > .bg > .planet.beige { width: 160px; left: -55px; }
     #needWeb > .bg > .planet.pink { width: 135px; right: -55px; }
-    #quote { margin: -15px auto 30px; width: 350px; }
+    #quote { margin: -15px auto 30px; width: 400px; }
     #quote h1 { font-size: 15px; }
-    #quote h2 { font-size: 13px; margin-top: -20px; }
+    #quote h2 { font-size: 13px; margin: -15px 20px 0 0; }
     #about h1 { font-size: 30px; left: 0; top: -10px; }
     #about p { font-size: 12px; }
-    #about > .bg { left: calc(45% + 20px); width: calc(40% - 20px); height: 120px; }
-    #about > .bg > .astronaut#waving-half { left: 100%; transform: translate(-100%, 0); }
-    #projects { margin: 50px auto 630px; }
+    #about > .bg { width: 100%; height: 100%; transform: translateX(-70%); right: 10px; }
+    #about > .bg > .astronaut#waving-half { width: 75px; bottom: auto; top: 0; transform: translate(50%, -115%); }
+    #projects { margin: 50px auto 0; }
     #projects > .textSection h1 { font-size: 34px; }
     #contact > .bg > #rocket { left: 15px; }
 }
 @media screen and (max-width: 550px) {
-    #projects { margin-bottom: 240px; }
+    .textSection > #webFeatures { width: 80%; margin: 0 auto; }
     #projects > .textSection h1 { margin-bottom: 40px; }
     #projects > .content { text-align: center; }
-    #projects > .content.content-separator { top: 250px; }
+    #projects > .content:not(.content-separator) { margin-bottom: 220px; }
+    #projects > .content.content-separator { margin-bottom: 100px; }
     #projects > .content > .projectWebsite { width: 300px; }
     #projects > .content > .projectWebsite.left { right: 40px; }
     #projects > .content > .projectWebsite.right { left: 40px; }
     #projects > .content > .projectWebsite > .browser .website { top: 12px; }
     #projects > .content > .projectWebsite > .mobile { display: none; visibility: hidden; }
     #projects > .content > .text { position: relative; right: auto !important; text-align: left; top: 140px !important; }
-    #projects > .content > .text.left .glowing-line { position: relative; left: calc(100% - 55px); }
-    #projects > .content > .text.left { text-align: right; left: auto !important; }
+    #projects > .content > .text.left { text-align: right; left: auto !important; padding: 0; }
+    #projects > .content > .text.left h3 { width: 120px; line-height: 1; margin-left: calc(100% - 120px); }
     #projects > .content > .text h3 { font-size: 23px; }
     #projects > .content > .text h4 { font-size: 15px; }
     #projects > .content > .text h5 { font-size: 18px; }
@@ -919,25 +944,22 @@ body > #orientation {
     .spaceSeparator#codeP { padding: 3vh 0; }
     .spaceSeparator#codeP > .text { width: 380px; }
     .spaceSeparator#codeP h1 { font-size: 22px; }
-    #projects { margin-bottom: 175px; }
-    #projects > .content.content-separator { top: 175px; }
     #projects > .content > .projectWebsite { width: 250px; }
     #projects > .content > .text { width: 350px; top: 100px !important; }
 }
 @media screen and (max-width: 440px) {
-    #about { width: 95%; }
+    #about { width: 100%; }
     #about > .textSection { padding-top: 10px; }
     #about > .bg > .astronaut#waving-half { visibility: hidden; display: none; }
-    #about h1 { font-size: 33px; top: -15px; left: 10px; }
+    #about h1 { font-size: 33px; top: -15px; left: 50%; transform: translateX(-50%); text-align: center; }
     .spaceSeparator#codeP { padding: 2vh 0; }
     .spaceSeparator#codeP > .text { width: 290px; }
     .spaceSeparator#codeP h1 { font-size: 17px; }
-    #projects { margin-bottom: 250px; }
     #projects > .textSection h1 { margin-bottom: 40px; }
-    #projects > .content.content-separator { top: 225px; }
     #projects > .content > .text .mobile-text > div { display: none !important; visibility: hidden; }
     #projects > .content > .text { width: 250px !important; position: relative; top: 0 !important; right: auto !important; }
     #projects > .content > .text.left { left: auto !important; }
+    #projects > .content > .text.left h3 { width: 100%; margin-left: 0; }
     #projects > .content > .text > * { line-height: 1; }
     #projects > .content > .projectWebsite { right: auto !important; left: 50% !important; transform: translate(-50%, 0); top: 100px; }
 }
@@ -945,12 +967,13 @@ body > #orientation {
     #introSection > #introBg > .planet.yellow { visibility: hidden; display: none; }
     #introSection > #introBg > .planet.blue { width: 300px; bottom: -6vh; left: 50%; transform: translate(-50%, 0); }
     #introSection > #introBg > .planet.earth { visibility: hidden; display: none; }
+    .textSection > #webFeatures { width: 90%; }
     #introSection > #introBg > .planet.red { width: 400px; top: -75px; right: 0; left: 75px; }
     .spaceSeparator { margin: 1vh 0; padding: 1vh 0; }
     #needWeb h1 { margin-bottom: 10px; }
     #needWeb h2 { margin-bottom: 5px; }
     #needWeb h3 { margin-bottom: 5px; }
-    #quote { width: 250px; margin-top: 35px; }
+    #quote { width: 300px; margin-top: 35px; }
     #quote h1 { font-size: 11px; }
     #quote h2 { font-size: 9px; margin-top: -15px; }
     #about h1 { left: 50%; transform: translate(-50%, 0); }
@@ -976,7 +999,7 @@ body > #orientation {
     #needWeb h1 { font-size: 14px; }
     #needWeb h1 b { font-size: 17px; }
     #needWeb button { font-size: 8px; }
-    #quote { margin: 25px auto; width: 175px; }
+    #quote { margin: 25px auto; width: 225px; }
     #quote h1 { font-size: 8px; }
     #quote h2 { font-size: 7px; margin-top: -13px; }
     #about h1 { font-size: 28px; top: -8px; }
