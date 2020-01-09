@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="4ee87284-57f4-4a6d-ae0f-0295b0f8c39b" name="Hostinger" url="http://srv190.main-hosting.eu">
+        <fileTransfer host="srv190.main-hosting.eu" port="21" rootFolder="/domains/marcelmiro.com/public_html">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

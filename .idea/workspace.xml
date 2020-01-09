@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="60c2d396-07c7-4f19-a2da-839edd51057e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/contact_rocket_3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/contact_rocket_3.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
     </list>
@@ -67,7 +68,7 @@
       <workItem from="1574199043612" duration="4061000" />
       <workItem from="1575799155203" duration="497000" />
       <workItem from="1577125926955" duration="31041000" />
-      <workItem from="1578590090215" duration="4818000" />
+      <workItem from="1578590090215" duration="7998000" />
     </task>
     <servers />
   </component>
@@ -75,11 +76,15 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="736" y="178" key="#Deployment" timestamp="1577188138477">
-      <screen x="0" y="0" width="2560" height="1040" />
+    <state x="-1368" y="178" key="#Deployment" timestamp="1578600774394">
+      <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1368" y="178" key="#Deployment/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1572052261786" />
+    <state x="-1368" y="178" key="#Deployment/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1578600774394" />
     <state x="736" y="178" key="#Deployment/0.0.2560.1040@0.0.2560.1040" timestamp="1577188138477" />
+    <state x="-1506" y="176" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578600720841">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1506" y="176" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1578600720841" />
     <state x="-1192" y="350" key="#com.intellij.tools.ToolEditorDialog" timestamp="1574202936042">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
@@ -100,10 +105,10 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.2560.1040@0.0.2560.1040" timestamp="1577312024418" />
-    <state x="-1098" y="418" key="WebDeployment.AddServerDialog.v.1" timestamp="1572052186596">
+    <state x="-1098" y="418" key="WebDeployment.AddServerDialog.v.1" timestamp="1578600726820">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1098" y="418" key="WebDeployment.AddServerDialog.v.1/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1572052186596" />
+    <state x="-1098" y="418" key="WebDeployment.AddServerDialog.v.1/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1578600726820" />
     <state x="-1090" y="413" key="publish.login" timestamp="1572563073578">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>

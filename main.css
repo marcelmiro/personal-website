@@ -669,7 +669,7 @@ body > #orientation {
 #contact > .bg > div > .rocket-smoke {
     bottom: 0;
     /*width: 78px;*/
-    width: 42%;
+    width: 42.5%;
 }
 #contact > .bg > div > .rocket-smoke.small { display: none; }
 /*
