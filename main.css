@@ -100,6 +100,10 @@ body > #orientation {
     font-size: 20px;
 }
 
+.main-container {
+    overflow: hidden;
+}
+
 #introSection > #introBg, #introSection > #introBg > #bg, #introSection > #introBg > #bgStars {
     position: relative;
     height: 100vh;
@@ -636,7 +640,7 @@ body > #orientation {
     top: 0;
     left: 0;
 }
-#contact > .bg > img { position: absolute; }
+#contact > .bg img { position: absolute; }
 #contact > .bg > #smoke {
     /*
     width: 1100px;
@@ -647,23 +651,36 @@ body > #orientation {
     z-index: 2;
     overflow: hidden;
 }
-#contact > .bg > #rocket {
+#contact > .bg > div {
+    position: absolute;
     width: 180px;
     /*
     left: 275px;
      */
     left: 15%;
-    bottom: -200px;
+    bottom: 20px;
 }
+#contact > .bg > div > img { left: 50%; transform: translateX(-50%); }
+#contact > .bg > div > #rocket {
+    top: calc(100% - 500px);
+    width: 100%;
+    z-index: 2;
+}
+#contact > .bg > div > .rocket-smoke {
+    bottom: 0;
+    /*width: 78px;*/
+    width: 42%;
+}
+#contact > .bg > div > .rocket-smoke.small { display: none; }
+/*
 #contact > .bg > div {
     position: absolute;
     bottom: 25px;
     right: 350px;
-    /*
     animation: floatText 8s ease-in-out;
     animation-iteration-count: infinite;
-     */
 }
+*/
 #contact > .bg #ufo {
     width: 250px;
 }
@@ -708,7 +725,7 @@ body > #orientation {
     #projects > .content > .text.left { position: relative !important; left: 75px !important; transform: translate(0, 0) !important; }
     #contact > .text > #copied-text { margin-bottom: 50px; }
     #contact > .bg > #smoke { width: 700px; }
-    #contact > .bg > #rocket { width: 160px; }
+    #contact > .bg > div { width: 160px; }
 }
 @media screen and (max-width: 1420px) {
     .spaceSeparator { margin: 6vh 0; padding: 3vh 0; }
@@ -730,7 +747,8 @@ body > #orientation {
     #introSection > #introBg > .planet.red { width: 595px; top: -150px; right: -150px; }
     #about > .textSection > .text { width: 550px; }
     #contact > .bg > #smoke { width: 600px; }
-    #contact > .bg > #rocket { width: 150px; bottom: -220px; }
+    #contact > .bg > div { width: 150px; }
+    #contact > .bg > div > .rocket-smoke { bottom: 50px; }
 }
 @media screen and (max-width: 1200px) {
     #introSection > #introBg > .planet.yellow { width: 250px; top: 10%; left: 50px; }
@@ -742,6 +760,9 @@ body > #orientation {
     #needWeb > .text { width: 50%; }
     #about > .textSection { padding-top: 100px; }
     #about > .bg > .astronaut#flag { width: 600px; }
+    #contact > .bg > div > #rocket { top: calc(100% - 400px); }
+    #contact > .bg > div > .rocket-smoke.small { display: block; }
+    #contact > .bg > div > .rocket-smoke:not(.small) { display: none; }
 }
 @media screen and (max-width: 1150px) {
     #needWeb > .bg > .satellite { width: 175px; right: 50px; }
@@ -790,7 +811,7 @@ body > #orientation {
     #projects > .content > .text.left { right: auto; left: 25px; width: 380px; }
     #projects #pomodoro .mobile .website { top: 0; }
     #contact > .bg > #smoke { left: auto; right: 375px; }
-    #contact > .bg > #rocket { left: 75px; }
+    #contact > .bg > div { left: 75px; }
 }
 @media screen and (max-width: 900px) {
     .underline:after, a.underline:after, a.underline:visited:after { height: 3px; }
@@ -805,7 +826,8 @@ body > #orientation {
     .spaceSeparator#codeP > .text { width: 600px; }
     .spaceSeparator#codeP h1 { font-size: 35px; }
     #contact > .bg > #smoke { right: auto; left: -100px; }
-    #contact > .bg > #rocket { width: 140px; }
+    #contact > .bg > div { width: 140px; }
+    #contact > .bg > div > #rocket { top: calc(100% - 350px); }
 }
 @media screen and (max-width: 850px) {
     #needWeb h1 { font-size: 18px; }
@@ -840,7 +862,7 @@ body > #orientation {
     #projects > .content > .text h3 { font-size: 26px; }
     #projects > .content > .text h4 { font-size: 18px; }
     #projects > .content > .text h5 { font-size: 20px; }
-    #contact > .bg > #rocket { left: 40px; }
+    #contact > .bg > div { left: 40px; }
 }
 @media screen and (max-width: 740px) {
     #projects > .content.content-separator { margin-bottom: 340px; }
@@ -856,7 +878,7 @@ body > #orientation {
     #projects > .content > .text { width: 400px; position: absolute; top: 50px; }
     #projects > .content > .text.right { left: auto; right: -50px; }
     #projects > .content > .text.left { left: 25px !important; }
-    #contact > .bg > #rocket { left: 25px; }
+    #contact > .bg > div { left: 25px; }
 }
 @media screen and (max-width: 700px) {
     #introSection > #introBg > .planet.yellow { width: 180px; top: 14%; left: auto; right: 450px; }
@@ -874,10 +896,12 @@ body > #orientation {
     #contact > .text > #contact-info { margin-top: 20px; }
     #contact > .text > #contact-info img { width: 40px; }
     #contact > .bg > #smoke { width: 500px; }
-    #contact > .bg > #rocket { width: 125px; }
+    #contact > .bg > div { width: 125px; }
+    #contact > .bg > div > #rocket { top: calc(100% - 300px); }
 }
 @media screen and (max-width: 620px) {
-    #contact > .bg > #rocket { width: 110px; bottom: -200px; }
+    #contact > .bg > div { width: 110px; }
+    #contact > .bg > div > #rocket { top: calc(100% - 250px); }
 }
 @media screen and (max-width: 600px) {
     #introSection > #introBg > .planet.yellow { width: 150px; top: 16%; right: 350px; }
@@ -900,7 +924,7 @@ body > #orientation {
     #about > .bg > .astronaut#waving-half { width: 75px; bottom: auto; top: 0; transform: translate(50%, -115%); }
     #projects { margin: 50px auto 0; }
     #projects > .textSection h1 { font-size: 34px; }
-    #contact > .bg > #rocket { left: 15px; }
+    #contact > .bg > div { left: 15px; }
 }
 @media screen and (max-width: 550px) {
     .textSection > #webFeatures { width: 80%; margin: 0 auto; }
@@ -928,7 +952,7 @@ body > #orientation {
     #contact > .text > #contact-info { margin-top: 15px; }
     #contact > .text > #contact-info img { width: 30px; }
     #contact > .text > #contact-info :not(:first-child) { margin-left: 2px; }
-    #contact > .bg > #smoke, #contact > .bg > #rocket { display: none; visibility: hidden; }
+    #contact > .bg > #smoke, #contact > .bg > div { display: none; visibility: hidden; }
 }
 @media screen and (max-width: 500px) {
     .underline:after, a.underline:after, a.underline:visited:after { height: 2px; }

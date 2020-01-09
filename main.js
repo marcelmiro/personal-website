@@ -12,12 +12,10 @@ window.addEventListener("load", function () {
     starsPos();
     //planetsPos();
     //roverPos();
-    projectWebsiteHeight();
 });
 
 window.addEventListener("resize", function () {
     starsPos();
-    projectWebsiteHeight();
 
     pomodoroResize();
 });
@@ -84,26 +82,6 @@ function smoothScroll() {
             }
         }
     });
-}
-
-let major36BH, major36MH;
-function projectWebsiteHeight(input) {
-    major36BH = $("#projects > .content > #major36.projectWebsite > .browser .website").height();
-    major36MH = $("#projects > .content > #major36.projectWebsite > .mobile .website").height();
-
-    if (input) {
-        let temp = "";
-        switch (input) {
-            case "majorB":
-                temp = major36BH;
-                break;
-            case "majorM":
-                temp = major36MH;
-                break;
-        }
-        console.log(temp);
-        return "-" + temp/4 + "px";
-    }
 }
 
 let stars = $("#introSection > #introBg > #bgTinyStars, #introSection > #introBg > #bgSmallStars");
@@ -222,10 +200,10 @@ if (browser !== "IE") {
     let tweenProjectRestaurant = new TimelineMax();
     // let browserH = document.querySelector("#projects > .content > #major36.projectWebsite > .browser .website").style.height;6
     tweenProjectRestaurant.to("#projects > .content > #major36.projectWebsite > .browser .website", 1, {ease: "none", y: "-55%"}, 0)
-        .to("#projects > .content > #major36.projectWebsite > .mobile .website", 1, {ease: "none", y: "-55vh"}, 0);
+        .to("#projects > .content > #major36.projectWebsite > .mobile .website", 1, {ease: "none", y: "-55%"}, 0);
 
     let tweenContact = new TimelineMax();
-    tweenContact.to("#contact > .bg > #rocket", 1, {y: "-40vh"}, 0)
+    tweenContact.to("#contact > .bg > div > #rocket", 1, {y: "-20vh"}, 0)
     //.fromTo("#contact > .bg > div", 1, {rotation: 15, scale: 0.2} , {rotation: -25, y: "-20vh", x: "45vw", scale: 1.2}, 0)
     ;
 
@@ -257,14 +235,16 @@ if (browser !== "IE") {
         .setTween(tweenProjectRestaurant)
         .addTo(controller);
 
+    let h1 = $(window).height() / 2;
+    let h2 = $(document).height() - $("#contact").offset().top;
     let sceneContact = new ScrollMagic.Scene({
-        offset: -400,
+        offset: -h1,
         triggerElement: "#contact",
-        duration: "104%",
+        duration: h2,
         reverse: true
     })
         .setTween(tweenContact)
-        //.addIndicators()
+        .addIndicators()
         .addTo(controller);
 
 }
