@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="60c2d396-07c7-4f19-a2da-839edd51057e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/work_jupiter-notify_1080.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/work_jupiter-notify_1080.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/work_jupiter-notify_1080.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/work_jupiter-notify_mobile.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/work_jupiter-notify_mobile.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/work_jupiter-notify_mobile.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

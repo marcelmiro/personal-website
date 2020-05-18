@@ -547,6 +547,7 @@ body > #orientation {
     position: relative;
     top: 125px;
     width: 600px;
+    z-index: 2;
 }
 #projects > .content > .text.right { left: calc(50% + 150px); }
 #projects > .content > .text.left { position: absolute !important; left: 50%; transform: translate(-110%, 0); text-align: right; padding-right: 40px; }
@@ -581,6 +582,16 @@ body > #orientation {
     visibility: hidden;
 }
 #projects #pomodoro .mobile .website { border-radius: 30px; }
+#projects #jupiter-notify .browser .website {
+    height: 100%;
+    background: url("assets/work_jupiter-notify_1080.png") no-repeat center;
+    background-size: auto 100%;
+}
+#projects #jupiter-notify .mobile .website {
+    height: 100%;
+    background: url("assets/work_jupiter-notify_mobile.png") no-repeat center;
+    background-size: auto 100%;
+}
 
 #contact {
     background: #161E39;

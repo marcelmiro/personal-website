@@ -135,21 +135,21 @@ if (browser === "Edge") {
 let windowH, pomodoroEnter, pomodoroLeave, jnEnter, jnLeave;
 function projectResize() {
     let pomodoroWebsite = $('#projects > .content > #pomodoro.projectWebsite > .browser .website');
-    let jnWebsite = $('#projects > .content > #jupiter-notify.projectWebsite > .browser .website');
+    // let jnWebsite = $('#projects > .content > #jupiter-notify.projectWebsite > .browser .website');
 
     windowH = $(window).height();
 
     pomodoroEnter = pomodoroWebsite.offset().top - .75 * windowH;
     pomodoroLeave = pomodoroEnter + pomodoroWebsite.height() + .5 * windowH;
 
-    jnEnter = jnWebsite.offset().top - .75 * windowH;
-    jnLeave = jnEnter + jnWebsite.height() + .5 * windowH;
+    // jnEnter = jnWebsite.offset().top - .75 * windowH;
+    // jnLeave = jnEnter + jnWebsite.height() + .5 * windowH;
 
     projectScroll();
 }
 
-let videoBrowser = document.querySelector("#projects > .content > #jupiter-notify.projectWebsite > .browser .website");
-let videoMobile = document.querySelector("#projects > .content > #jupiter-notify.projectWebsite > .mobile .website");
+// let videoBrowser = document.querySelector("#projects > .content > #jupiter-notify.projectWebsite > .browser .website");
+// let videoMobile = document.querySelector("#projects > .content > #jupiter-notify.projectWebsite > .mobile .website");
 function projectScroll() {
     if (!isMobile) {
         let scrollPos = $(document).scrollTop();
@@ -166,7 +166,7 @@ function projectScroll() {
             }
         }
 
-        if (scrollPos >= jnEnter && scrollPos <= jnLeave) {
+        /*if (scrollPos >= jnEnter && scrollPos <= jnLeave) {
             if (videoBrowser.paused) {
                 videoBrowser.play();
                 videoMobile.play();
@@ -176,7 +176,7 @@ function projectScroll() {
                 videoBrowser.pause();
                 videoMobile.pause();
             }
-        }
+        }*/
     }
 }
 projectResize();
