@@ -1,10 +1,7 @@
-let lazyLoadInstance = new LazyLoad({
-    elements_selector: ".lazy"
-    // ... more custom settings?
-});
+let lazyLoadInstance = new LazyLoad({ elements_selector: ".lazy" });
 
 $(window).on('beforeunload', function () {
-    $(window).scrollTop(0);
+    //$(window).scrollTop(0);
 });
 
 window.addEventListener("load", function () {
@@ -21,12 +18,11 @@ window.addEventListener("load", function () {
 
 window.addEventListener("resize", function () {
     starsPos();
-
-    pomodoroResize();
+    projectResize();
 });
 
 window.addEventListener("scroll", function() {
-    pomodoroScroll();
+    projectScroll();
 });
 
 function checkBrowser() {
@@ -136,17 +132,28 @@ if (browser === "Edge") {
 }
 
 
-let windowH, pomodoroEnter, pomodoroLeave;
-function pomodoroResize() {
-    let browserWebsite = $('#projects > .content > #pomodoro.projectWebsite > .browser .website');
+let windowH, pomodoroEnter, pomodoroLeave, jnEnter, jnLeave;
+function projectResize() {
+    let pomodoroWebsite = $('#projects > .content > #pomodoro.projectWebsite > .browser .website');
+    let jnWebsite = $('#projects > .content > #jupiter-notify.projectWebsite > .browser .website');
+
     windowH = $(window).height();
-    pomodoroEnter = browserWebsite.offset().top - .75 * windowH;
-    pomodoroLeave = pomodoroEnter + browserWebsite.height() + .5 * windowH;
-    pomodoroScroll();
+
+    pomodoroEnter = pomodoroWebsite.offset().top - .75 * windowH;
+    pomodoroLeave = pomodoroEnter + pomodoroWebsite.height() + .5 * windowH;
+
+    jnEnter = jnWebsite.offset().top - .75 * windowH;
+    jnLeave = jnEnter + jnWebsite.height() + .5 * windowH;
+
+    projectScroll();
 }
-function pomodoroScroll() {
+
+let videoBrowser = document.querySelector("#projects > .content > #jupiter-notify.projectWebsite > .browser .website");
+let videoMobile = document.querySelector("#projects > .content > #jupiter-notify.projectWebsite > .mobile .website");
+function projectScroll() {
     if (!isMobile) {
         let scrollPos = $(document).scrollTop();
+
         if (scrollPos >= pomodoroEnter && scrollPos <= pomodoroLeave) {
             if ($('#projects > .content > #pomodoro.projectWebsite > .browser img.website').attr("src") !== "assets/work_pomodoro_1080.gif") {
                 $('#projects > .content > #pomodoro.projectWebsite > .browser img.website').attr({ "src": "assets/work_pomodoro_1080.gif" });
@@ -158,9 +165,21 @@ function pomodoroScroll() {
                 $('#projects > .content > #pomodoro.projectWebsite > .mobile img.website').attr({ "src": "assets/work_pomodoro_mobile.jpg" });
             }
         }
+
+        if (scrollPos >= jnEnter && scrollPos <= jnLeave) {
+            if (videoBrowser.paused) {
+                videoBrowser.play();
+                videoMobile.play();
+            }
+        } else {
+            if (!videoBrowser.paused) {
+                videoBrowser.pause();
+                videoMobile.pause();
+            }
+        }
     }
 }
-pomodoroResize();
+projectResize();
 
 
 let textSpeed = 50;

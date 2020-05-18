@@ -681,7 +681,7 @@ body > #orientation {
     animation-iteration-count: infinite;
 }
 */
-#contact > .bg #ufo {
+/*#contact > .bg #ufo {
     width: 250px;
 }
 #contact > .bg #cow {
@@ -694,7 +694,7 @@ body > #orientation {
     bottom: 125px;
     animation: floatText 3s;
     animation-iteration-count: infinite;
-}
+}*/
 
 
 
@@ -952,7 +952,7 @@ body > #orientation {
     #contact > .text > #contact-info { margin-top: 15px; }
     #contact > .text > #contact-info img { width: 30px; }
     #contact > .text > #contact-info :not(:first-child) { margin-left: 2px; }
-    #contact > .bg > #smoke, #contact > .bg > div { display: none; visibility: hidden; }
+    #contact > .bg > #smoke, #contact > .bg > div { visibility: hidden; }
 }
 @media screen and (max-width: 500px) {
     .underline:after, a.underline:after, a.underline:visited:after { height: 2px; }
@@ -980,7 +980,7 @@ body > #orientation {
     .spaceSeparator#codeP > .text { width: 290px; }
     .spaceSeparator#codeP h1 { font-size: 17px; }
     #projects > .textSection h1 { margin-bottom: 40px; }
-    #projects > .content > .text .mobile-text > div { display: none !important; visibility: hidden; }
+    #projects > .content > .text .mobile-text > span { display: none !important; visibility: hidden; }
     #projects > .content > .text { width: 250px !important; position: relative; top: 0 !important; right: auto !important; }
     #projects > .content > .text.left { left: auto !important; }
     #projects > .content > .text.left h3 { width: 100%; margin-left: 0; }
@@ -1033,6 +1033,10 @@ body > #orientation {
 @media screen and (max-width: 275px) {
     #about h1 { font-size: 25px; top: -10px; }
     .spaceSeparator#codeP h1 { font-size: 13px; }
+    /*#projects > .content .text.left { width: auto !important; min-width: min-content; }*/
+}
+@media screen and (max-width: 267px) {
+    #projects > .content > .projectWebsite { transform: translate(0, 0); left: 0 !important; }
 }
 @media screen and (max-width: 900px) and (max-height: 500px) {
     #introSection > #introBg > .planet.yellow { right: 400px; top: 10%; }

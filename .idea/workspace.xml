@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="60c2d396-07c7-4f19-a2da-839edd51057e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/work_jupiter-notify_1080.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/work_jupiter-notify_mobile.mp4" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/contact_rocket_3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/contact_rocket_3.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/work_jupiter-notify_1080.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/work_jupiter-notify_mobile.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -19,7 +21,6 @@
   <component name="ProjectId" id="1SZ00Lrhfs2dJpTL5O4u8wMZiaL" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -39,18 +40,6 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -76,42 +65,9 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="-1368" y="178" key="#Deployment" timestamp="1578600774394">
-      <screen x="-1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="-1368" y="178" key="#Deployment/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1578600774394" />
-    <state x="736" y="178" key="#Deployment/0.0.2560.1040@0.0.2560.1040" timestamp="1577188138477" />
-    <state x="-1506" y="176" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578600720841">
-      <screen x="-1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="-1506" y="176" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1578600720841" />
-    <state x="-1192" y="350" key="#com.intellij.tools.ToolEditorDialog" timestamp="1574202936042">
-      <screen x="-1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="-1192" y="350" key="#com.intellij.tools.ToolEditorDialog/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1574202936042" />
-    <state x="-1326" y="298" width="731" height="631" key="EditFileWatcherDialog" timestamp="1574202659188">
-      <screen x="-1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="-1326" y="298" width="731" height="631" key="EditFileWatcherDialog/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1574202659188" />
-    <state x="-1180" y="274" key="FileChooserDialogImpl" timestamp="1572054736155">
-      <screen x="-1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="-1180" y="274" key="FileChooserDialogImpl/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1572054736155" />
-    <state x="-1459" y="162" key="SettingsEditor" timestamp="1574202961741">
-      <screen x="-1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="-1459" y="162" key="SettingsEditor/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1574202961741" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1577312024418">
+    <state x="994" y="237" width="698" height="566" key="find.popup" timestamp="1589814516974">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.2560.1040@0.0.2560.1040" timestamp="1577312024418" />
-    <state x="-1098" y="418" key="WebDeployment.AddServerDialog.v.1" timestamp="1578600726820">
-      <screen x="-1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="-1098" y="418" key="WebDeployment.AddServerDialog.v.1/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1578600726820" />
-    <state x="-1090" y="413" key="publish.login" timestamp="1572563073578">
-      <screen x="-1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="-1090" y="413" key="publish.login/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1572563073578" />
+    <state x="994" y="237" width="698" height="566" key="find.popup/0.0.2560.1040/2560.0.1920.1040@0.0.2560.1040" timestamp="1589814516974" />
   </component>
 </project>
