@@ -1057,6 +1057,10 @@ body > #orientation {
     #introSection > #title button { padding: 9px 15px; font-size: 14px; border-radius: 20px; }
 }
 
+@media screen and (min-width: 2500px) {
+    #introSection > #introBg > #bgSmallStars { visibility: hidden; display: none; }
+    #introSection > #introBg > #bgTinyStars { visibility: hidden; display: none; }
+}
 @media screen and (orientation: portrait) {
     #introSection > #introBg > .planet { visibility: hidden; display: none; }
     #introSection > #introBg > #bgSmallStars { visibility: hidden; display: none; }
