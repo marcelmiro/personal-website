@@ -1,2 +1,1 @@
-# Personal Website
-### [Website](https://marcelmiro.com)
+[https://marcelmiro.com](https://marcelmiro.com)
