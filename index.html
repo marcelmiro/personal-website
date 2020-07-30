@@ -9,15 +9,12 @@
 	<title>Marcel Miro</title>
 	<meta name="description" content= "Marcel Miro - Full-stack Developer, Self-taught Coder and University of York Student. Based in Barcelona." />
 	<meta name="robots" content= "index, follow">
-	<meta name="keywords" content="ux design, ui design, ui, graphic, graphic design, web development, web design, web, website, website development, marcel, marcel miro, marcelmiro, marcelmiro.com, marcel.com">
+	<meta name="keywords" content="ux design, ui design, ui, graphic, graphic design, web development, web design, web, website, website development, marcel, marcel miro, marcelmiro, marcelmiro.com, marcel.com, miro, marcel web, marcel miro web, marcel miro barcelona">
 
 	<!--    FONTS    -->
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Dancing+Script:700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:300,400,500&display=swap" rel="stylesheet">
-
-	<!--    CSS LIBRARIES    -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	
 	<!--    MAIN CSS    -->
 	<link rel="stylesheet" href="main.css">
@@ -36,275 +33,255 @@
 
 <body>
 
-<div id="orientation">
-	<div>Rotate your screen to live the full experience :)</div>
+
+<div class="section__home">
+	<div class="title">
+		<h1>Marcel Miro.</h1>
+		<p>Full-stack <b>Developer</b><br><span>Based in <b>Barcelona</b></span></p>
+		<a class="button" href="#features">Continue</a>
+	</div>
+	
+	<div class="bg">
+		<div class="space-stars"></div>
+		<img class="planet yellow" src="assets/planet_yellow.svg" alt="Yellow planet" />
+		<img class="planet blue" src="assets/planet_blue.svg" alt="Blue planet" />
+		<img class="planet earth" src="assets/planet_earth.svg" alt="Earth planet" />
+		<img class="planet red" src="assets/planet_red.svg" alt="Red planet" />
+		
+		<img class="earth-stars slow-rotate" src="assets/bg_tiny_stars.svg" alt="Tiny stars" />
+		<img class="earth-stars normal-rotate" src="assets/bg_small_stars.svg" alt="Small stars" />
+		<img class="bg__earth" src="assets/white_earth.svg" alt="White planet" />
+	</div>
 </div>
 
-<div class="main-container">
-	<div id="introSection">
-		<div id="title">
-			<h1 class="floatText">Marcel Miro.</h1>
-			<p>Full-stack <b>Developer</b><br><span>Based in <b>Barcelona</b></span></p>
-			<a href="#webFeatures"><button class="button" style="margin-bottom: 25px">Continue</button></a>
-		</div>
-		
-		<div id="introBg">
-			<div id="bg"></div>
-			<div id="bgStars"></div>
-			<img class="planet yellow" src="assets/planet_yellow.svg" alt=" " />
-			<img class="planet blue" src="assets/planet_blue.svg" alt=" " />
-			<img class="planet earth" src="assets/planet_earth.svg" alt=" " />
-			<img class="planet red" src="assets/planet_red.svg" alt=" " />
-			
-			<img id="bgEarth" src="assets/bg_earth.svg" alt=" " />
-			<img id="bgTinyStars" class="slowRotate" src="assets/bg_tiny_stars.svg" alt=" " />
-			<img id="bgSmallStars" class="normalRotate" src="assets/bg_small_stars.svg" alt=" " />
-		</div>
-	</div>
+
+<div class="section__features" id="features">
+	<h2>What should a website need?</h2>
 	
-	<div class="textSection">
-		<div id="webFeatures">
-			<h1>What should a website need?</h1>
-			
-			<div class="container">
-				<div class="row">
-					<div class="col-12 col-sm-6 col-md-4">
-						<img class="needImages" src="assets/need_structure.svg" alt="Structural website" />
-						<h3>Web Development</h3>
-						<h4>Well-structured and intuitive design, adapted for the target group.</h4>
-					</div>
-					
-					<div class="col-12 col-sm-6 col-md-4">
-						<img class="needImages" src="assets/need_interactivity.svg" alt="Interactivity" />
-						<h3>Interactive Interface</h3>
-						<h4>Communicative elements to engage customers' experience.</h4>
-					</div>
-					
-					<div class="col-12 col-sm-6 col-md-4">
-						<img class="needImages" src="assets/need_graphics.svg" alt="Art" />
-						<h3>Graphic Design</h3>
-						<h4>Coherent themes and drawings to showcase eye-catching content.</h4>
-					</div>
-					
-					<div class="col-12 col-sm-6 col-md-4">
-						<img class="needImages" src="assets/need_compatibility.svg" alt="Tech devices" />
-						<h3>Compatible Platforms</h3>
-						<h4>Platform adaptation, such as Mobile-Friendly, to view wherever you want to.</h4>
-					</div>
-					
-					<div class="col-12 col-sm-6 col-md-4">
-						<img class="needImages" src="assets/need_launch.svg" alt="Rocket launch" />
-						<h3>Web Management</h3>
-						<h4>Launch and maintenance of websites, including FTP, SSL and E-mail services.</h4>
-					</div>
-					
-					<div class="col-12 col-sm-6 col-md-4">
-						<img class="needImages" src="assets/need_seo.svg" alt="Trophy podium" />
-						<h3>SEO Practice</h3>
-						<h4>Website ranking to the top of searches. Audience is more likely to find you.</h4>
-					</div>
-				</div>
+	<div class="container">
+		<div class="card">
+			<div class="bg">
+				<img src="assets/feature_structure.svg" alt="Website" />
 			</div>
+			<h3>Web Development</h3>
+			<p>Well-structured and intuitive design, adapted for the target group.</p>
 		</div>
-	</div>
-	
-	<div class="spaceSeparator" id="needWeb">
-		<div class="text">
-			<h1>Promote yourself with your <b>PERFECT</b> website</h1>
-			<h2>A website is your most powerful tool for communication. Whether you want to inform about a business, or prefer to share your passions, there is no better space than the Internet to do so.</h2>
-			<h3>Receive all these features, and launch your dream!</h3>
-			<a href="#contact"><button class="button">Contact Me</button></a>
-		</div>
-		
-		<div class="bg">
-			<img class="planet beige" src="assets/planet_beige.svg" alt=" " />
-			<img class="planet pink" src="assets/planet_pink.svg" alt=" " />
-			<img class="satellite" src="assets/bg_satellite.svg" alt=" " />
-		</div>
-	</div>
-	
-	<div class="textSection container" id="quote">
-		<h1>"A website is a window through which your business says hello to the world."</h1>
-		<h2>Amit Kalantri</h2>
-	</div>
-	
-	<hr>
-	
-	<div id="about">
-		<div class="textSection">
-			<div class="text">
-				<h1>Hello, I'm Marcel.</h1>
-				<p><br><br>
-					Technology passionate and music lover, this is who I am and what my world revolves around. However, focusing on my most geeky side of technology, over the years I’ve been testing my interests in various computing fields, such as photo and video editing, or 3D animation.
-					<br><br>
-					This search process seemed like an eternity, until I found programming. I was fascinated by the ability I could have of printing a “Hello World” on my screen, and by the idea that I could have a website of my own.
-					<br><br>
-					5 years later, and here I am, building my proper portfolio website. In these 5 years I’ve been studying through online courses, in web development, Python and Java, and completed an educational training in C and C++.
-					<br><br>
-					Currently, I’m combining my continuous learning process with studying at the University of York, in England. By coursing a degree in Computer Science, I can iteratively develop my understanding of computers, including how they work and how I can improve them, and I mean to apply this knowledge into web development, as a daily challenge.
-				</p>
+		<div class="card">
+			<div class="bg">
+				<img src="assets/feature_interactivity.svg" alt="Interactivity" />
 			</div>
+			<h3>Interactive Interface</h3>
+			<p>Communicative elements to engage customers' experience.</p>
 		</div>
-		<div class="bg">
-			<img class="astronaut" id="flag" src="assets/bg_astronaut_flag_planet.svg" alt=" " />
-			<img class="astronaut" id="waving" src="assets/bg_astronaut_waving.svg" alt=" " />
-			<img class="astronaut" id="waving-half" src="assets/bg_astronaut_waving_half.svg" alt=" " />
+		<div class="card">
+			<div class="bg">
+				<img src="assets/feature_graphics.svg" alt="Art board" />
+			</div>
+			<h3>Graphic Design</h3>
+			<p>Coherent themes and drawings to showcase eye-catching content.</p>
 		</div>
-	</div>
-	
-	<div class="spaceSeparator" id="codeP">
-		<div class="text">
-			<h1>More Web Development creations at
-				<a href="https://codepen.io/marcelmiro/" target="_blank" rel="noopener" class="underline">
-					<strong><small>codepen.io</small>/MarcelMiro</strong>
-				</a>
-			</h1>
+		<div class="card">
+			<div class="bg">
+				<img src="assets/feature_compatibility.svg" alt="Tech devices" />
+			</div>
+			<h3>Compatible Platforms</h3>
+			<p>Platform adaptation, such as Mobile-Friendly, to view wherever you want to.</p>
 		</div>
-	</div>
-	
-	<div id="projects">
-		<div class="textSection">
-			<h1>Recent Projects</h1>
+		<div class="card">
+			<div class="bg">
+				<img src="assets/feature_launch.svg" alt="Rocket launch" />
+			</div>
+			<h3>Web Management</h3>
+			<p>Launch and maintenance of websites, including FTP, SSL and E-mail services.</p>
 		</div>
-		
-		<div class="content">
-			<div id="major36" class="projectWebsite left">
-				<div class="browser">
-					<a href="https://marcelmiro.com/Major36/index_en.html" target="_blank" rel="noopener">
-						<!--    Screenshot generator from https://www.site-shot.com/    -->
-						<img class="frame" src="assets/mockup_browser.svg"  alt=" "/>
-						<img class="website" src="assets/work_restaurant_1080.jpg" alt=" "/>
-					</a>
-				</div>
-				
-				<div class="mobile">
-					<a href="https://marcelmiro.com/Major36/index_en.html" target="_blank" rel="noopener">
-						<!--    Screenshot generator from https://www.site-shot.com/    -->
-						<img class="frame" src="assets/mockup_mobile.svg" alt=" " />
-						<img class="website" src="assets/work_restaurant_mobile.jpg" alt=" " />
-					</a>
-				</div>
+		<div class="card">
+			<div class="bg">
+				<img src="assets/feature_seo.svg" alt="Trophy podium" />
 			</div>
-			
-			<div class="text right">
-				<div class="glowing-line"></div>
-				<h3>Major 36</h3>
-				<h5>&nbsp;2019</h5>
-				<h4>Major 36 is a local restaurant with more than 25 years of experience. A traditional cuisine with touches of modernity, located near Barcelona, Spain.</h4>
-				<h4 class="mobile-text">Local restaurant<span> located near Barcelona.</span></h4>
-			</div>
-		</div>
-		
-		<div class="content content-separator">
-			<div id="pomodoro" class="projectWebsite right">
-				<div class="browser">
-					<a href="http://pomodoro-website.herokuapp.com/" target="_blank" rel="noopener">
-						<img class="frame" src="assets/mockup_browser.svg"  alt=" "/>
-						<img class="website" src="assets/work_pomodoro_1080.jpg" alt=" "/>
-					</a>
-				</div>
-				
-				<div class="mobile">
-					<a href="http://pomodoro-website.herokuapp.com/" target="_blank" rel="noopener">
-						<img class="frame" src="assets/mockup_mobile.svg" alt=" " />
-						<img class="website" src="assets/work_pomodoro_mobile.jpg" alt=" " />
-					</a>
-				</div>
-			</div>
-			
-			<div class="text left">
-				<div class="glowing-line"></div>
-				<h3>Pomodoro Timer</h3>
-				<h5>&nbsp;2019</h5>
-				<h4>Productivity timing technique with integrated white noises/music, and a to-do list. Made with Vue.js.</h4>
-				<h4 class="mobile-text">Productivity timing technique<span> made with Vue.</span></h4>
-			</div>
-		</div>
-		
-		<div class="content content-separator">
-			<div id="jupiter-notify" class="projectWebsite left">
-				<div class="browser">
-					<a href="https://www.jupiternotify.com/" target="_blank" rel="noopener">
-						<img class="frame" src="assets/mockup_browser.svg"  alt=" "/>
-						<div class="website"></div>
-						<!--<video class="website" muted loop>
-							<source src="assets/work_jupiter-notify_1080.mp4" type="video/mp4" />
-							<img class="website" src="assets/work_jupiter-notify_1080.png" alt=" "/>
-						</video>-->
-					</a>
-				</div>
-				
-				<div class="mobile">
-					<a href="https://www.jupiternotify.com/" target="_blank" rel="noopener">
-						<img class="frame" src="assets/mockup_mobile.svg" alt=" " />
-						<div class="website"></div>
-						<!--<video class="website" muted loop>
-							<source src="assets/work_jupiter-notify_mobile.mp4" type="video/mp4" />
-							<img class="website" src="assets/work_jupiter-notify_mobile.png" alt=" "/>
-						</video>-->
-					</a>
-				</div>
-			</div>
-			
-			<div class="text right">
-				<div class="glowing-line"></div>
-				<h3>Jupiter Notify</h3>
-				<h5>&nbsp;2020</h5>
-				<h4>Cook group website with OAuth login, integrated platform for selling memberships and custom dashboard.</h4>
-				<h4 class="mobile-text">Membership selling website<span> with custom dashboard.</span></h4>
-			</div>
-		</div>
-	</div>
-	
-	<div id="contact">
-		<div class="text">
-			<h3>Make the final step...</h3>
-			<h1>Know more about me</h1>
-			
-			<button class="button" id="email-button" onclick="copyEmail()">info@marcelmiro.com</button>
-			<h3 id="copied-text">&nbsp;</h3>
-			
-			<h2>Don't worry, you can find me here too!</h2>
-			<div id="contact-info">
-				<a href="https://github.com/marcelmiro" target="_blank" rel="noopener">
-					<img class="lazy" data-src="assets/icon_github.svg" alt="Github Icon" />
-				</a>
-				<a href="https://facebook.com/marcelmiro1" target="_blank" rel="noopener">
-					<img class="lazy" data-src="assets/icon_facebook.svg" alt="Facebook Icon" />
-				</a>
-				<a href="https://instagram.com/marcel_miro" target="_blank" rel="noopener">
-					<img class="lazy" data-src="assets/icon_instagram.svg" alt="Instagram Icon" />
-				</a>
-				<a href="https://wa.me/34663540031" target="_blank" rel="noopener">
-					<img class="lazy" data-src="assets/icon_whatsapp.svg" alt="Whatsapp Icon" />
-				</a>
-			</div>
-		</div>
-		<div class="bg">
-			<div>
-				<img id="rocket" src="assets/contact_rocket_3.svg" alt=" " />
-				<img class="rocket-smoke" src="assets/contact_rocket_smoke.svg" alt=" " />
-				<img class="rocket-smoke small" src="assets/contact_rocket_smoke_2.svg" alt=" " />
-			</div>
-			<img id="smoke" class="lazy" data-src="assets/contact_bg_smoke.svg" alt=" " />
-			
-			<!--
-			<div>
-				<img id="ufo" class="lazy" data-src="assets/contact_ufo.svg" alt=" " />
-				<img id="cow" class="lazy" data-src="assets/contact_cow.svg" alt=" " />
-			</div>
-			-->
+			<h3>SEO Practice</h3>
+			<p>Website ranking to the top of searches. Audience is more likely to find you.</p>
 		</div>
 	</div>
 </div>
+
+
+<div class="section__promotion">
+	<div class="text">
+		<h2>Promote yourself with your <b>PERFECT</b> website</h2>
+		<p>A website is your most powerful tool for communication. Whether you want to inform about a business, or prefer to share your passions, there is no better space than the Internet to do so.</p>
+		<h4>Get started and launch your dream!</h4>
+		<a class="button" href="#contact">Contact Me</a>
+	</div>
+	
+	<div class="bg">
+		<img class="planet beige" src="assets/planet_beige.svg" alt="Planet beige" />
+		<img class="planet pink" src="assets/planet_pink.svg" alt="Planet pink" />
+		<img class="satellite" src="assets/bg_satellite.svg" alt="Satellite" />
+	</div>
+</div>
+
+
+<div class="section__quote">
+	<h2>"A website is a window through which your business says hello to the world."</h2>
+	<h3>Amit Kalantri</h3>
+</div>
+
+
+<hr>
+
+
+<div class="section__about">
+	<div class="text">
+		<div class="text__container">
+			<h2>Hello, I'm Marcel.</h2>
+			<p><br><br>
+				Technology passionate and music lover, this is who I am and what my world revolves around. However, focusing on my most geeky side of technology, over the years I’ve been testing my interests in various computing fields, such as photo and video editing, or 3D animation.
+				<br><br>
+				This search process seemed like an eternity, until I found programming. I was fascinated by the ability I could have of printing a “Hello World” on my screen, and by the idea that I could have a website of my own.
+				<br><br>
+				5 years later, and here I am, building my proper portfolio website. In these 5 years I’ve been studying through online courses, in web development, Python and Java, and completed an educational training in C and C++.
+				<br><br>
+				Currently, I’m combining my continuous learning process with studying at the University of York, in England. By coursing a degree in Computer Science, I can iteratively develop my understanding of computers, including how they work and how I can improve them, and I mean to apply this knowledge into web development, as a daily challenge.
+			</p>
+		</div>
+	</div>
+	<div class="bg">
+		<img class="astronaut flag" src="assets/bg_astronaut_flag_planet.svg" alt="Astronaut" />
+		<img class="astronaut waving" src="assets/bg_astronaut_waving.svg" alt="Astronaut" />
+	</div>
+</div>
+
+
+<div class="section__more">
+	<div class="text">
+		<h2>
+			More Web Development creations at
+			<a class="underline" href="https://github.com/marcelmiro/" target="_blank" rel="noopener">
+				<small>github.com</small>/MarcelMiro
+			</a>
+		</h2>
+	</div>
+</div>
+
+
+<div class="section__projects">
+	<h2>Recent Projects</h2>
+	
+	<!--    Screenshot generator from https://www.site-shot.com/    -->
+	<div id="major36" class="project">
+		<div class="showcase">
+			<a class="browser" href="https://marcelmiro.github.io/major-36/" target="_blank" rel="noopener">
+				<div>
+					<img class="frame" src="assets/mockup_browser.svg"  alt="Browser mockup"/>
+					<img class="website" src="assets/work_restaurant_1080.jpg" alt="Browser website"/>
+				</div>
+			</a>
+			<a class="mobile" href="https://marcelmiro.github.io/major-36/" target="_blank" rel="noopener">
+				<img class="frame" src="assets/mockup_mobile.svg" alt="Mobile mockup" />
+				<img class="website" src="assets/work_restaurant_mobile.jpg" alt="Mobile website" />
+			</a>
+		</div>
+		
+		<div class="text">
+			<div class="glowing-line"></div>
+			<h3>Major 36</h3>
+			<p class="date">&nbsp;2019</p>
+			<p class="description">Major 36 is a local restaurant with more than 25 years of experience. A traditional cuisine with touches of modernity, located near Barcelona, Spain.</p>
+			<p class="description mobile">Local restaurant<span> located near Barcelona</span>.</p>
+		</div>
+	</div>
+	
+	<div id="pomodoro" class="project">
+		<div class="showcase">
+			<a class="browser" href="http://pomodoro-website.herokuapp.com/" target="_blank" rel="noopener">
+				<img class="frame" src="assets/mockup_browser.svg"  alt="Browser mockup"/>
+				<img class="website" src="assets/work_pomodoro_1080.jpg" alt="Browser website"/>
+			</a>
+			<a class="mobile" href="http://pomodoro-website.herokuapp.com/" target="_blank" rel="noopener">
+				<img class="frame" src="assets/mockup_mobile.svg" alt="Mobile mockup" />
+				<img class="website" src="assets/work_pomodoro_mobile.jpg" alt="Mobile website" />
+			</a>
+		</div>
+		
+		<div class="text">
+			<div class="glowing-line"></div>
+			<h3>Pomodoro Timer</h3>
+			<p class="date">&nbsp;2019</p>
+			<p class="description">Productivity timing technique with integrated white noises/music, and a to-do list. Made with Vue.js.</p>
+			<p class="description mobile">Productivity timing technique<span> made with Vue</span>.</p>
+		</div>
+	</div>
+	
+	<div id="jupiter-notify" class="project">
+		<div class="showcase">
+			<a class="browser" href="https://www.jupiternotify.com/" target="_blank" rel="noopener">
+				<img class="frame" src="assets/mockup_browser.svg"  alt="Browser mockup"/>
+				<div class="website"></div>
+				<!--<video class="website" muted loop>
+					<source src="assets/work_jupiter-notify_1080.mp4" type="video/mp4" />
+					<img class="website" src="assets/work_jupiter-notify_1080.png" alt=" "/>
+				</video>-->
+			</a>
+			<a class="mobile" href="https://www.jupiternotify.com/" target="_blank" rel="noopener">
+				<img class="frame" src="assets/mockup_mobile.svg" alt="Mobile mockup" />
+				<div class="website"></div>
+				<!--<video class="website" muted loop>
+					<source src="assets/work_jupiter-notify_mobile.mp4" type="video/mp4" />
+					<img class="website" src="assets/work_jupiter-notify_mobile.png" alt=" "/>
+				</video>-->
+			</a>
+		</div>
+		
+		<div class="text">
+			<div class="glowing-line"></div>
+			<h3>Jupiter Notify</h3>
+			<p class="date">&nbsp;2020</p>
+			<p class="description">Cook group website with OAuth login, integrated platform for selling memberships and custom dashboard.</p>
+			<p class="description mobile">E-commerce website<span> with custom dashboard</span>.</p>
+		</div>
+	</div>
+</div>
+
+
+<div class="section__contact" id="contact">
+	<div class="text">
+		<h4>Make the final step...</h4>
+		<h2>Know more about me</h2>
+		
+		<button class="button" id="email-button" onclick="copyEmail()">info@marcelmiro.com</button>
+		<h4 id="copy-email-feedback">&nbsp;</h4>
+		
+		<h5>Don't worry, you can find me here too!</h5>
+		<div class="social">
+			<a href="https://github.com/marcelmiro" target="_blank" rel="noopener">
+				<img src="assets/icon_github.svg" alt="Github icon" />
+			</a>
+			<a href="https://facebook.com/marcelmiro1" target="_blank" rel="noopener">
+				<img src="assets/icon_facebook.svg" alt="Facebook icon" />
+			</a>
+			<a href="https://instagram.com/marcel_miro" target="_blank" rel="noopener">
+				<img src="assets/icon_instagram.svg" alt="Instagram icon" />
+			</a>
+			<a href="https://wa.me/34663540031" target="_blank" rel="noopener">
+				<img src="assets/icon_whatsapp.svg" alt="Whatsapp icon" />
+			</a>
+		</div>
+	</div>
+	<div class="bg">
+		<div>
+			<img class="rocket" src="assets/contact_rocket_3.svg" alt="Rocket" />
+			<img class="rocket-smoke" src="assets/contact_rocket_smoke.svg" alt="Rocket smoke" />
+			<img class="rocket-smoke small" src="assets/contact_rocket_smoke_2.svg" alt="Rocket smoke" />
+		</div>
+		<img class="smoke" src="assets/contact_bg_smoke.svg" alt="Smoke" />
+	</div>
+</div>
+
 
 
 <!--    JS LIBRARIES    -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/12.3.0/lazyload.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/is_js/0.9.0/is.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
 <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/jquery.ScrollMagic.min.js"></script>
@@ -314,7 +291,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/6.1.1/typeit.min.js"></script>
 
 <!--    MAIN JS    -->
-<script  src="main.js"></script>
+<script  src="index.js"></script>
 
 </body>
 

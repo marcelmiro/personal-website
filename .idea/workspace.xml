@@ -2,19 +2,47 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="60c2d396-07c7-4f19-a2da-839edd51057e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/644b2c9f9a0abf705bd4f009211d34e460e667e7/index.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.sass-cache/644b2c9f9a0abf705bd4f009211d34e460e667e7/main.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/feature_bg.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/feature_compatibility.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/feature_graphics.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/feature_interactivity.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/feature_launch.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/feature_seo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/feature_structure.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/white_earth.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sitemap.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/work_jupiter-notify_1080.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/work_jupiter-notify_1080.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/work_jupiter-notify_1080.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/work_jupiter-notify_mobile.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/work_jupiter-notify_mobile.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/work_jupiter-notify_mobile.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/bg_earth.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/need_compatibility.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/need_graphics.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/need_interactivity.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/need_launch.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/need_seo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/need_structure.svg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="SCSS File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -33,14 +61,27 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Jupiter Notify" />
+    <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Documents\Web Dev\Personal Website" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="split" />
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -59,16 +100,45 @@
       <workItem from="1575799155203" duration="497000" />
       <workItem from="1577125926955" duration="31041000" />
       <workItem from="1578590090215" duration="7998000" />
+      <workItem from="1590053632457" duration="15000" />
+      <workItem from="1590320012128" duration="29566000" />
+      <workItem from="1590406177237" duration="10643000" />
+      <workItem from="1590683114757" duration="391000" />
+      <workItem from="1590683522440" duration="1809000" />
+      <workItem from="1590841406569" duration="12000" />
+      <workItem from="1595496450869" duration="32542000" />
+      <workItem from="1595840310160" duration="27418000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="994" y="237" width="698" height="566" key="find.popup" timestamp="1589814516974">
+    <state x="706" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1590330806389">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="994" y="237" width="698" height="566" key="find.popup/0.0.2560.1040/2560.0.1920.1040@0.0.2560.1040" timestamp="1589814516974" />
+    <state x="706" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.2560.1040/2560.0.1920.1040@0.0.2560.1040" timestamp="1590330806389" />
+    <state x="1022" y="355" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1590349623064">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="1022" y="355" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.2560.1040/2560.0.1920.1040@0.0.2560.1040" timestamp="1590349623064" />
+    <state x="-1500" y="275" key="FileChooserDialogImpl" timestamp="1596041204993">
+      <screen x="-2560" y="0" width="2560" height="1040" />
+    </state>
+    <state x="-1500" y="275" key="FileChooserDialogImpl/-2560.0.2560.1040/0.0.1920.1040@-2560.0.2560.1040" timestamp="1596041204993" />
+    <state x="994" y="237" width="698" height="566" key="find.popup" timestamp="1590342203406">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="994" y="237" width="698" height="566" key="find.popup/0.0.2560.1040/2560.0.1920.1040@0.0.2560.1040" timestamp="1590342203406" />
+    <state x="-1624" y="240" width="672" height="677" key="run.anything.popup" timestamp="1595502059288">
+      <screen x="-2560" y="0" width="2560" height="1040" />
+    </state>
+    <state x="-1624" y="240" width="672" height="677" key="run.anything.popup/-2560.0.2560.1040/0.0.1920.1040@-2560.0.2560.1040" timestamp="1595502059288" />
+    <state x="936" y="240" key="run.anything.popup/0.0.2560.1040/2560.0.1920.1040@0.0.2560.1040" timestamp="1590330960556" />
+    <state x="943" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1590332803327">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="943" y="225" width="672" height="678" key="search.everywhere.popup/0.0.2560.1040/2560.0.1920.1040@0.0.2560.1040" timestamp="1590332803327" />
   </component>
 </project>

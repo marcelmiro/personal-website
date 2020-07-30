@@ -1,0 +1,34 @@
+##Deny index and add fancy indexing
+Options All -Indexes
+IndexOptions FancyIndexing
+Options +FollowSymLinks
+
+##Deny access to assets files
+<FilesMatch "\.(psd)$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+
+##Remove .html extension
+RewriteEngine On
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteRule ^([^\.]+)$ $1.html [NC,L]
+RewriteCond %{HTTP_HOST} ^marcelmiro.com [NC]
+RewriteRule ^(.*)$ https://www.marcelmiro.com/$1 [L,R=301,NC]
+
+RewriteEngine On
+ErrorDocument 400 /html/400.html
+ErrorDocument 401 /html/401.html
+ErrorDocument 403 /html/403.html
+ErrorDocument 404 /html/404.html
+ErrorDocument 500 /html/500.html
+
+##Redirect index
+DirectoryIndex main.html main.htm home.html home.htm index.html index.htm main.html main.htm index.php 404.html
+
+# DO NOT REMOVE THIS LINE AND THE LINES BELOW SSL_REDIRECT:marcelmiro.com
+RewriteEngine on
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP_HOST} ^marcelmiro.com$
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+# DO NOT REMOVE THIS LINE AND THE LINES ABOVE SSL_REDIRECT:marcelmiro.com
